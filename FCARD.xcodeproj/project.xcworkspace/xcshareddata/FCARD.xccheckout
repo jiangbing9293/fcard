@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>57E740F7-C745-4AEE-97E1-773C226C7DD4</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>680E2B4FFAFFAC2162F00E75E4AB119BA7A98CBA</key>
+		<string>http://git.oschina.net/zengraoli/uzplayer.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>680E2B4FFAFFAC2162F00E75E4AB119BA7A98CBA</key>
+		<string>uzplayer/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://git.oschina.net/zengraoli/uzplayer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>680E2B4FFAFFAC2162F00E75E4AB119BA7A98CBA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>680E2B4FFAFFAC2162F00E75E4AB119BA7A98CBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>uzplayer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,1298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5004FAE91962EE8E00456BF0 /* DeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAE71962EE8E00456BF0 /* DeviceListViewController.m */; };
+		5004FAEA1962EE8E00456BF0 /* DeviceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5004FAE81962EE8E00456BF0 /* DeviceListViewController.xib */; };
+		5004FAEC1962F31800456BF0 /* list_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FAEB1962F31800456BF0 /* list_bg.png */; };
+		5004FAEF1962F97200456BF0 /* DeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAEE1962F97200456BF0 /* DeviceTableViewCell.m */; };
+		5004FAF11962F99A00456BF0 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5004FAF01962F99A00456BF0 /* DeviceTableViewCell.xib */; };
+		5004FAF5196445DF00456BF0 /* AddDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAF3196445DF00456BF0 /* AddDeviceViewController.m */; };
+		5004FAF6196445DF00456BF0 /* AddDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5004FAF4196445DF00456BF0 /* AddDeviceViewController.xib */; };
+		5004FB0219644C7900456BF0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAF919644C7900456BF0 /* FMDatabase.m */; };
+		5004FB0319644C7900456BF0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAFB19644C7900456BF0 /* FMDatabaseAdditions.m */; };
+		5004FB0419644C7900456BF0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAFD19644C7900456BF0 /* FMDatabasePool.m */; };
+		5004FB0519644C7900456BF0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FAFF19644C7900456BF0 /* FMDatabaseQueue.m */; };
+		5004FB0619644C7900456BF0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB0119644C7900456BF0 /* FMResultSet.m */; };
+		5004FB091964527900456BF0 /* MyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB081964527900456BF0 /* MyDevice.m */; };
+		5004FB0B19645A3700456BF0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5004FB0A19645A3700456BF0 /* libsqlite3.0.dylib */; };
+		5004FB0F1965A20800456BF0 /* EditDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB0D1965A20800456BF0 /* EditDeviceViewController.m */; };
+		5004FB101965A20800456BF0 /* EditDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB0E1965A20800456BF0 /* EditDeviceViewController.xib */; };
+		5004FB1D1968F80100456BF0 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB1B1968F80100456BF0 /* MainMenuViewController.m */; };
+		5004FB1E1968F80100456BF0 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB1C1968F80100456BF0 /* MainMenuViewController.xib */; };
+		5004FB331968FDF000456BF0 /* addnewcard_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB241968FDF000456BF0 /* addnewcard_off.png */; };
+		5004FB341968FDF000456BF0 /* checkrecords_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB251968FDF000456BF0 /* checkrecords_off.png */; };
+		5004FB351968FDF000456BF0 /* communications_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB261968FDF000456BF0 /* communications_off.png */; };
+		5004FB361968FDF000456BF0 /* datamonitoring_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB271968FDF000456BF0 /* datamonitoring_off.png */; };
+		5004FB371968FDF000456BF0 /* deletenewcard_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB281968FDF000456BF0 /* deletenewcard_off.png */; };
+		5004FB381968FDF000456BF0 /* deviceinformation_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB291968FDF000456BF0 /* deviceinformation_off.png */; };
+		5004FB391968FDF000456BF0 /* doorstate_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB2A1968FDF000456BF0 /* doorstate_off.png */; };
+		5004FB3B1968FDF000456BF0 /* nomenclature_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB2C1968FDF000456BF0 /* nomenclature_off.png */; };
+		5004FB3C1968FDF000456BF0 /* personnelfiles_off_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB2D1968FDF000456BF0 /* personnelfiles_off_bg.png */; };
+		5004FB3D1968FDF000456BF0 /* remotedoor_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB2E1968FDF000456BF0 /* remotedoor_off.png */; };
+		5004FB3E1968FDF000456BF0 /* securitysettings_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB2F1968FDF000456BF0 /* securitysettings_off.png */; };
+		5004FB3F1968FDF000456BF0 /* settingclock_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB301968FDF000456BF0 /* settingclock_off.png */; };
+		5004FB401968FDF000456BF0 /* systemsettings_off_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB311968FDF000456BF0 /* systemsettings_off_bg.png */; };
+		5004FB411968FDF000456BF0 /* videosurveillance_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB321968FDF000456BF0 /* videosurveillance_off.png */; };
+		5004FB4619696E1000456BF0 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB4319696E1000456BF0 /* GCDAsyncSocket.m */; };
+		5004FB4719696E1000456BF0 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB4519696E1000456BF0 /* GCDAsyncUdpSocket.m */; };
+		5004FB4919696E3B00456BF0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5004FB4819696E3B00456BF0 /* CFNetwork.framework */; };
+		5004FB4B19696E4900456BF0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5004FB4A19696E4900456BF0 /* Security.framework */; };
+		5004FB50196B782D00456BF0 /* OpenDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5004FB4E196B782D00456BF0 /* OpenDoorViewController.m */; };
+		5004FB51196B782D00456BF0 /* OpenDoorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB4F196B782D00456BF0 /* OpenDoorViewController.xib */; };
+		5004FB54196B792200456BF0 /* remotedoor_off_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB52196B792200456BF0 /* remotedoor_off_bg.png */; };
+		5004FB55196B792200456BF0 /* remotedoor_on_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004FB53196B792200456BF0 /* remotedoor_on_bg.png */; };
+		50143B9A197165AC0024FD95 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50143B98197165AC0024FD95 /* AddCardViewController.m */; };
+		50143B9B197165AC0024FD95 /* AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143B99197165AC0024FD95 /* AddCardViewController.xib */; };
+		50143B9E197168520024FD95 /* addcard_imageview_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 50143B9C197168520024FD95 /* addcard_imageview_off.png */; };
+		50143B9F197168520024FD95 /* addcard_imageview_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 50143B9D197168520024FD95 /* addcard_imageview_on.png */; };
+		50143BA219716DFA0024FD95 /* MyCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 50143BA119716DFA0024FD95 /* MyCard.m */; };
+		50143BA6197172970024FD95 /* CardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50143BA4197172970024FD95 /* CardListViewController.m */; };
+		50143BA7197172970024FD95 /* CardListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143BA5197172970024FD95 /* CardListViewController.xib */; };
+		50143BA9197173960024FD95 /* searchbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 50143BA8197173960024FD95 /* searchbox.png */; };
+		50143BAD197174D60024FD95 /* CardListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50143BAB197174D60024FD95 /* CardListTableViewCell.m */; };
+		50143BAE197174D60024FD95 /* CardListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143BAC197174D60024FD95 /* CardListTableViewCell.xib */; };
+		50143BB21972AC170024FD95 /* EditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50143BB01972AC170024FD95 /* EditCardViewController.m */; };
+		50143BB31972AC170024FD95 /* EditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143BB11972AC170024FD95 /* EditCardViewController.xib */; };
+		5019558B19C3D63A00BC7D96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5019558A19C3D63A00BC7D96 /* AudioToolbox.framework */; };
+		506400B5195AFC6100DF11EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506400B4195AFC6000DF11EA /* Foundation.framework */; };
+		506400B7195AFC6100DF11EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506400B6195AFC6100DF11EA /* CoreGraphics.framework */; };
+		506400B9195AFC6100DF11EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506400B8195AFC6100DF11EA /* UIKit.framework */; };
+		506400C1195AFC6100DF11EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506400C0195AFC6100DF11EA /* main.m */; };
+		506400C5195AFC6100DF11EA /* freelancerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 506400C4195AFC6100DF11EA /* freelancerAppDelegate.m */; };
+		506400C8195AFC6100DF11EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506400C6195AFC6100DF11EA /* Main.storyboard */; };
+		506400CB195AFC6100DF11EA /* freelancerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506400CA195AFC6100DF11EA /* freelancerViewController.m */; };
+		506400CD195AFC6100DF11EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506400CC195AFC6100DF11EA /* Images.xcassets */; };
+		506400D4195AFC6200DF11EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506400D3195AFC6200DF11EA /* XCTest.framework */; };
+		506400D5195AFC6200DF11EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506400B4195AFC6000DF11EA /* Foundation.framework */; };
+		506400D6195AFC6200DF11EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506400B8195AFC6100DF11EA /* UIKit.framework */; };
+		506400FC195EF7E700DF11EA /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400F5195EF7E700DF11EA /* Icon57.png */; };
+		506400FD195EF7E700DF11EA /* Icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400F6195EF7E700DF11EA /* Icon58.png */; };
+		506400FE195EF7E700DF11EA /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400F7195EF7E700DF11EA /* Icon72.png */; };
+		506400FF195EF7E700DF11EA /* Icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400F8195EF7E700DF11EA /* Icon80.png */; };
+		50640100195EF7E700DF11EA /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400F9195EF7E700DF11EA /* Icon114.png */; };
+		50640101195EF7E700DF11EA /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400FA195EF7E700DF11EA /* Icon120.png */; };
+		50640102195EF7E700DF11EA /* Icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 506400FB195EF7E700DF11EA /* Icon1024.png */; };
+		5064010D195F033700DF11EA /* input_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 50640109195F033700DF11EA /* input_login.png */; };
+		5064010E195F033700DF11EA /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5064010A195F033700DF11EA /* login_bg.png */; };
+		5064010F195F033700DF11EA /* login_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5064010B195F033700DF11EA /* login_btn.png */; };
+		50640110195F033700DF11EA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5064010C195F033700DF11EA /* logo.png */; };
+		50640119195F14C700DF11EA /* MyKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50640118195F14C700DF11EA /* MyKeyChainHelper.m */; };
+		5064011E195FAE9900DF11EA /* FindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5064011C195FAE9900DF11EA /* FindPasswordViewController.m */; };
+		5064011F195FAE9900DF11EA /* FindPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5064011D195FAE9900DF11EA /* FindPasswordViewController.xib */; };
+		50640123195FAF7B00DF11EA /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 50640120195FAF7B00DF11EA /* btn_back.png */; };
+		50640124195FAF7B00DF11EA /* input_line_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 50640121195FAF7B00DF11EA /* input_line_bg.png */; };
+		50640125195FAF7B00DF11EA /* title_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 50640122195FAF7B00DF11EA /* title_bg.png */; };
+		506401281960605300DF11EA /* MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 506401271960605300DF11EA /* MyTool.m */; };
+		50A04121199266E500C67241 /* CheckRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A0411F199266E500C67241 /* CheckRecordViewController.m */; };
+		50A04122199266E500C67241 /* CheckRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A04120199266E500C67241 /* CheckRecordViewController.xib */; };
+		50A0413D1996535500C67241 /* CheckRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A0413C1996535500C67241 /* CheckRecordCell.xib */; };
+		50A0413F19970B2D00C67241 /* CheckRecordHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A0413E19970B2D00C67241 /* CheckRecordHeader.xib */; };
+		50A041481998EA6D00C67241 /* RecordMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A041461998EA6D00C67241 /* RecordMonitorViewController.m */; };
+		50A041491998EA6D00C67241 /* RecordMonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A041471998EA6D00C67241 /* RecordMonitorViewController.xib */; };
+		50A0414D1998FC7800C67241 /* SetMonitorRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A0414B1998FC7800C67241 /* SetMonitorRateViewController.m */; };
+		50A0414E1998FC7800C67241 /* SetMonitorRateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A0414C1998FC7800C67241 /* SetMonitorRateViewController.xib */; };
+		50A041531999070500C67241 /* SecuritySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A041511999070500C67241 /* SecuritySettingViewController.m */; };
+		50A041541999070500C67241 /* SecuritySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A041521999070500C67241 /* SecuritySettingViewController.xib */; };
+		50A04157199908CA00C67241 /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A04155199908CA00C67241 /* switch_off.png */; };
+		50A04158199908CA00C67241 /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A04156199908CA00C67241 /* switch_on.png */; };
+		50A5F58319B5999D00CF7A55 /* Icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F58219B5999D00CF7A55 /* Icon29.png */; };
+		50A5F58919B5A07900CF7A55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F58619B5A07900CF7A55 /* Default-568h@2x.png */; };
+		50A5F58A19B5A07900CF7A55 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F58719B5A07900CF7A55 /* Default.png */; };
+		50A5F58B19B5A07900CF7A55 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A5F58819B5A07900CF7A55 /* Default@2x.png */; };
+		50B742E1197D5ABE003EB561 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742E0197D5ABE003EB561 /* CoreAudio.framework */; };
+		50B742E3197D5ACC003EB561 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742E2197D5ACC003EB561 /* OpenGLES.framework */; };
+		50B742E5197D5AD7003EB561 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742E4197D5AD7003EB561 /* QuartzCore.framework */; };
+		50B742E7197D5AE1003EB561 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742E6197D5AE1003EB561 /* Accelerate.framework */; };
+		50B742E9197D5AF1003EB561 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742E8197D5AF1003EB561 /* MediaPlayer.framework */; };
+		50B742EB197D5B10003EB561 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742EA197D5B10003EB561 /* libz.dylib */; };
+		50B742ED197D5B25003EB561 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742EC197D5B25003EB561 /* libbz2.1.0.dylib */; };
+		50B742EF197D5BA0003EB561 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B742EE197D5B9F003EB561 /* libiconv.dylib */; };
+		50B7430A1984A307003EB561 /* playback_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B743061984A307003EB561 /* playback_pause.png */; };
+		50B7430B1984A307003EB561 /* playback_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B743071984A307003EB561 /* playback_pause@2x.png */; };
+		50B7430C1984A307003EB561 /* playback_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B743081984A307003EB561 /* playback_play.png */; };
+		50B7430D1984A307003EB561 /* playback_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B743091984A307003EB561 /* playback_play@2x.png */; };
+		50B74319198A7966003EB561 /* ChangeDoorNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B74317198A7966003EB561 /* ChangeDoorNameViewController.m */; };
+		50B7431A198A7966003EB561 /* ChangeDoorNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B74318198A7966003EB561 /* ChangeDoorNameViewController.xib */; };
+		50C277081A12E7B700D4E525 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C277071A12E7B700D4E525 /* OpenAL.framework */; };
+		50C277151A12EFD100D4E525 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C277131A12EFD100D4E525 /* CoreData.framework */; };
+		50C277161A12EFD100D4E525 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C277141A12EFD100D4E525 /* CoreMedia.framework */; };
+		50D9A0B5198BDD9D00030C16 /* UpdatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D9A0B3198BDD9D00030C16 /* UpdatePasswordViewController.m */; };
+		50D9A0B6198BDD9D00030C16 /* UpdatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D9A0B4198BDD9D00030C16 /* UpdatePasswordViewController.xib */; };
+		50D9A0BA198BEF9700030C16 /* SetQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D9A0B8198BEF9700030C16 /* SetQuestionViewController.m */; };
+		50D9A0BB198BEF9700030C16 /* SetQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D9A0B9198BEF9700030C16 /* SetQuestionViewController.xib */; };
+		50F16E2C198DD5270075C01A /* DoorStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F16E2A198DD5270075C01A /* DoorStatusViewController.m */; };
+		50F16E2D198DD5270075C01A /* DoorStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F16E2B198DD5270075C01A /* DoorStatusViewController.xib */; };
+		50F16E32198E17390075C01A /* SettingClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F16E30198E17390075C01A /* SettingClockViewController.m */; };
+		50F16E33198E17390075C01A /* SettingClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F16E31198E17390075C01A /* SettingClockViewController.xib */; };
+		50F16E38198E7AA90075C01A /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F16E36198E7AA90075C01A /* DeviceInfoViewController.m */; };
+		50F16E39198E7AA90075C01A /* DeviceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F16E37198E7AA90075C01A /* DeviceInfoViewController.xib */; };
+		50F95841198BD07D002F2DF3 /* SystemSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9583F198BD07D002F2DF3 /* SystemSettingViewController.m */; };
+		50F95842198BD07D002F2DF3 /* SystemSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F95840198BD07D002F2DF3 /* SystemSettingViewController.xib */; };
+		50F95845198BD225002F2DF3 /* icon_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F95843198BD225002F2DF3 /* icon_more.png */; };
+		F018434D1A6CFBC300C33B4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F018434C1A6CFBC300C33B4D /* InfoPlist.strings */; };
+		F01843501A6DFC2700C33B4D /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = F018434F1A6DFC2700C33B4D /* iToast.m */; };
+		F01A13C11B103A0500FA0538 /* MyOpenDoorPwd.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A13C01B103A0500FA0538 /* MyOpenDoorPwd.m */; };
+		F01A13DF1B103EA900FA0538 /* AddOdpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A13D71B103EA900FA0538 /* AddOdpViewController.m */; };
+		F01A13E01B103EA900FA0538 /* AddOdpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01A13D81B103EA900FA0538 /* AddOdpViewController.xib */; };
+		F01A13E11B103EA900FA0538 /* OdpListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A13DA1B103EA900FA0538 /* OdpListTableViewCell.m */; };
+		F01A13E21B103EA900FA0538 /* OdpListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01A13DB1B103EA900FA0538 /* OdpListTableViewCell.xib */; };
+		F01A13E31B103EA900FA0538 /* OdpListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A13DD1B103EA900FA0538 /* OdpListViewController.m */; };
+		F01A13E41B103EA900FA0538 /* OdpListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01A13DE1B103EA900FA0538 /* OdpListViewController.xib */; };
+		F01A13E81B16022200FA0538 /* EditOdpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A13E61B16022200FA0538 /* EditOdpViewController.m */; };
+		F01A13E91B16022200FA0538 /* EditOdpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01A13E71B16022200FA0538 /* EditOdpViewController.xib */; };
+		F04F1FED1A75220500C124C0 /* libkxmovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FEC1A75220500C124C0 /* libkxmovie.a */; };
+		F04F1FF51A75221D00C124C0 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FEE1A75221D00C124C0 /* libavcodec.a */; };
+		F04F1FF61A75221D00C124C0 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FEF1A75221D00C124C0 /* libavdevice.a */; };
+		F04F1FF71A75221D00C124C0 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FF01A75221D00C124C0 /* libavfilter.a */; };
+		F04F1FF81A75221D00C124C0 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FF11A75221D00C124C0 /* libavformat.a */; };
+		F04F1FF91A75221D00C124C0 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FF21A75221D00C124C0 /* libavutil.a */; };
+		F04F1FFA1A75221D00C124C0 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FF31A75221D00C124C0 /* libswresample.a */; };
+		F04F1FFB1A75221D00C124C0 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FF41A75221D00C124C0 /* libswscale.a */; };
+		F04F1FFD1A75223400C124C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FFC1A75223400C124C0 /* AVFoundation.framework */; };
+		F04F1FFF1A75224100C124C0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04F1FFE1A75224100C124C0 /* CoreVideo.framework */; };
+		F054D65C1B175BAE00CF4A7B /* open_pwd.png in Resources */ = {isa = PBXBuildFile; fileRef = F054D65B1B175BAE00CF4A7B /* open_pwd.png */; };
+		F054D6601B1AAD3C00CF4A7B /* selectcontroller_off_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F054D65F1B1AAD3C00CF4A7B /* selectcontroller_off_bg.png */; };
+		F054D6631B1ACCE200CF4A7B /* login_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = F054D6611B1ACCE200CF4A7B /* login_bg1.png */; };
+		F054D6641B1ACCE200CF4A7B /* login_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = F054D6621B1ACCE200CF4A7B /* login_bg2.png */; };
+		F054D6661B1B071A00CF4A7B /* addcard_date.png in Resources */ = {isa = PBXBuildFile; fileRef = F054D6651B1B071A00CF4A7B /* addcard_date.png */; };
+		F054D6681B1B291F00CF4A7B /* cancel_alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = F054D6671B1B291F00CF4A7B /* cancel_alarm.png */; };
+		F056B96E1B22FF7C00BA0019 /* set_status.png in Resources */ = {isa = PBXBuildFile; fileRef = F056B96D1B22FF7C00BA0019 /* set_status.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506400D7195AFC6200DF11EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506400A9195AFC5F00DF11EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506400B0195AFC6000DF11EA;
+			remoteInfo = FCARD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5004FAE61962EE8E00456BF0 /* DeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListViewController.h; sourceTree = "<group>"; };
+		5004FAE71962EE8E00456BF0 /* DeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListViewController.m; sourceTree = "<group>"; };
+		5004FAE81962EE8E00456BF0 /* DeviceListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceListViewController.xib; sourceTree = "<group>"; };
+		5004FAEB1962F31800456BF0 /* list_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list_bg.png; path = "../UI设计/UI设计/设备列表界面/list_bg.png"; sourceTree = "<group>"; };
+		5004FAED1962F97200456BF0 /* DeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewCell.h; sourceTree = "<group>"; };
+		5004FAEE1962F97200456BF0 /* DeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewCell.m; sourceTree = "<group>"; };
+		5004FAF01962F99A00456BF0 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
+		5004FAF2196445DF00456BF0 /* AddDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDeviceViewController.h; sourceTree = "<group>"; };
+		5004FAF3196445DF00456BF0 /* AddDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDeviceViewController.m; sourceTree = "<group>"; };
+		5004FAF4196445DF00456BF0 /* AddDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddDeviceViewController.xib; sourceTree = "<group>"; };
+		5004FAF819644C7900456BF0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		5004FAF919644C7900456BF0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		5004FAFA19644C7900456BF0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		5004FAFB19644C7900456BF0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		5004FAFC19644C7900456BF0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		5004FAFD19644C7900456BF0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		5004FAFE19644C7900456BF0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		5004FAFF19644C7900456BF0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		5004FB0019644C7900456BF0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		5004FB0119644C7900456BF0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		5004FB071964527900456BF0 /* MyDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDevice.h; sourceTree = "<group>"; };
+		5004FB081964527900456BF0 /* MyDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDevice.m; sourceTree = "<group>"; };
+		5004FB0A19645A3700456BF0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		5004FB0C1965A20800456BF0 /* EditDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDeviceViewController.h; sourceTree = "<group>"; };
+		5004FB0D1965A20800456BF0 /* EditDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDeviceViewController.m; sourceTree = "<group>"; };
+		5004FB0E1965A20800456BF0 /* EditDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditDeviceViewController.xib; sourceTree = "<group>"; };
+		5004FB1A1968F80100456BF0 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		5004FB1B1968F80100456BF0 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		5004FB1C1968F80100456BF0 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		5004FB241968FDF000456BF0 /* addnewcard_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addnewcard_off.png; path = "../UI设计/UI设计/主功能界面/addnewcard_off.png"; sourceTree = "<group>"; };
+		5004FB251968FDF000456BF0 /* checkrecords_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkrecords_off.png; path = "../UI设计/UI设计/主功能界面/checkrecords_off.png"; sourceTree = "<group>"; };
+		5004FB261968FDF000456BF0 /* communications_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = communications_off.png; path = "../UI设计/UI设计/主功能界面/communications_off.png"; sourceTree = "<group>"; };
+		5004FB271968FDF000456BF0 /* datamonitoring_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = datamonitoring_off.png; path = "../UI设计/UI设计/主功能界面/datamonitoring_off.png"; sourceTree = "<group>"; };
+		5004FB281968FDF000456BF0 /* deletenewcard_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deletenewcard_off.png; path = "../UI设计/UI设计/主功能界面/deletenewcard_off.png"; sourceTree = "<group>"; };
+		5004FB291968FDF000456BF0 /* deviceinformation_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deviceinformation_off.png; path = "../UI设计/UI设计/主功能界面/deviceinformation_off.png"; sourceTree = "<group>"; };
+		5004FB2A1968FDF000456BF0 /* doorstate_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doorstate_off.png; path = "../UI设计/UI设计/主功能界面/doorstate_off.png"; sourceTree = "<group>"; };
+		5004FB2C1968FDF000456BF0 /* nomenclature_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nomenclature_off.png; path = "../UI设计/UI设计/主功能界面/nomenclature_off.png"; sourceTree = "<group>"; };
+		5004FB2D1968FDF000456BF0 /* personnelfiles_off_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = personnelfiles_off_bg.png; path = "../UI设计/UI设计/主功能界面/personnelfiles_off_bg.png"; sourceTree = "<group>"; };
+		5004FB2E1968FDF000456BF0 /* remotedoor_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remotedoor_off.png; path = "../UI设计/UI设计/主功能界面/remotedoor_off.png"; sourceTree = "<group>"; };
+		5004FB2F1968FDF000456BF0 /* securitysettings_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = securitysettings_off.png; path = "../UI设计/UI设计/主功能界面/securitysettings_off.png"; sourceTree = "<group>"; };
+		5004FB301968FDF000456BF0 /* settingclock_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingclock_off.png; path = "../UI设计/UI设计/主功能界面/settingclock_off.png"; sourceTree = "<group>"; };
+		5004FB311968FDF000456BF0 /* systemsettings_off_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = systemsettings_off_bg.png; path = "../UI设计/UI设计/主功能界面/systemsettings_off_bg.png"; sourceTree = "<group>"; };
+		5004FB321968FDF000456BF0 /* videosurveillance_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = videosurveillance_off.png; path = "../UI设计/UI设计/主功能界面/videosurveillance_off.png"; sourceTree = "<group>"; };
+		5004FB4219696E1000456BF0 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5004FB4319696E1000456BF0 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		5004FB4419696E1000456BF0 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		5004FB4519696E1000456BF0 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		5004FB4819696E3B00456BF0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5004FB4A19696E4900456BF0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5004FB4D196B782D00456BF0 /* OpenDoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenDoorViewController.h; sourceTree = "<group>"; };
+		5004FB4E196B782D00456BF0 /* OpenDoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenDoorViewController.m; sourceTree = "<group>"; };
+		5004FB4F196B782D00456BF0 /* OpenDoorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenDoorViewController.xib; sourceTree = "<group>"; };
+		5004FB52196B792200456BF0 /* remotedoor_off_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remotedoor_off_bg.png; path = "../UI设计/UI设计/远程开门界面/remotedoor_off_bg.png"; sourceTree = "<group>"; };
+		5004FB53196B792200456BF0 /* remotedoor_on_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remotedoor_on_bg.png; path = "../UI设计/UI设计/远程开门界面/remotedoor_on_bg.png"; sourceTree = "<group>"; };
+		50143B97197165AC0024FD95 /* AddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCardViewController.h; sourceTree = "<group>"; };
+		50143B98197165AC0024FD95 /* AddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCardViewController.m; sourceTree = "<group>"; };
+		50143B99197165AC0024FD95 /* AddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardViewController.xib; sourceTree = "<group>"; };
+		50143B9C197168520024FD95 /* addcard_imageview_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addcard_imageview_off.png; path = "../UI设计/UI设计/增加卡片界面/addcard_imageview_off.png"; sourceTree = "<group>"; };
+		50143B9D197168520024FD95 /* addcard_imageview_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addcard_imageview_on.png; path = "../UI设计/UI设计/增加卡片界面/addcard_imageview_on.png"; sourceTree = "<group>"; };
+		50143BA019716DFA0024FD95 /* MyCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCard.h; sourceTree = "<group>"; };
+		50143BA119716DFA0024FD95 /* MyCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCard.m; sourceTree = "<group>"; };
+		50143BA3197172970024FD95 /* CardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListViewController.h; sourceTree = "<group>"; };
+		50143BA4197172970024FD95 /* CardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListViewController.m; sourceTree = "<group>"; };
+		50143BA5197172970024FD95 /* CardListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListViewController.xib; sourceTree = "<group>"; };
+		50143BA8197173960024FD95 /* searchbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchbox.png; path = "../UI设计/UI设计/人事档案界面/searchbox.png"; sourceTree = "<group>"; };
+		50143BAA197174D60024FD95 /* CardListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListTableViewCell.h; sourceTree = "<group>"; };
+		50143BAB197174D60024FD95 /* CardListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListTableViewCell.m; sourceTree = "<group>"; };
+		50143BAC197174D60024FD95 /* CardListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListTableViewCell.xib; sourceTree = "<group>"; };
+		50143BAF1972AC170024FD95 /* EditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCardViewController.h; sourceTree = "<group>"; };
+		50143BB01972AC170024FD95 /* EditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCardViewController.m; sourceTree = "<group>"; };
+		50143BB11972AC170024FD95 /* EditCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCardViewController.xib; sourceTree = "<group>"; };
+		5019558A19C3D63A00BC7D96 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		506400B1195AFC6000DF11EA /* FCARD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCARD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		506400B4195AFC6000DF11EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		506400B6195AFC6100DF11EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		506400B8195AFC6100DF11EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		506400BC195AFC6100DF11EA /* FCARD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FCARD-Info.plist"; sourceTree = "<group>"; };
+		506400C0195AFC6100DF11EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		506400C2195AFC6100DF11EA /* FCARD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCARD-Prefix.pch"; sourceTree = "<group>"; };
+		506400C3195AFC6100DF11EA /* freelancerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freelancerAppDelegate.h; sourceTree = "<group>"; };
+		506400C4195AFC6100DF11EA /* freelancerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freelancerAppDelegate.m; sourceTree = "<group>"; };
+		506400C7195AFC6100DF11EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		506400C9195AFC6100DF11EA /* freelancerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freelancerViewController.h; sourceTree = "<group>"; };
+		506400CA195AFC6100DF11EA /* freelancerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freelancerViewController.m; sourceTree = "<group>"; };
+		506400CC195AFC6100DF11EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		506400D2195AFC6200DF11EA /* FCARDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCARDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506400D3195AFC6200DF11EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		506400E9195B000500DF11EA /* FCARD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FCARD.entitlements; sourceTree = "<group>"; };
+		506400ED195B045400DF11EA /* PacketStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketStruct.h; sourceTree = "<group>"; };
+		506400F5195EF7E700DF11EA /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon57.png; path = "../UI设计/UI设计/Icon/Icon57.png"; sourceTree = "<group>"; };
+		506400F6195EF7E700DF11EA /* Icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon58.png; path = "../UI设计/UI设计/Icon/Icon58.png"; sourceTree = "<group>"; };
+		506400F7195EF7E700DF11EA /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon72.png; path = "../UI设计/UI设计/Icon/Icon72.png"; sourceTree = "<group>"; };
+		506400F8195EF7E700DF11EA /* Icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon80.png; path = "../UI设计/UI设计/Icon/Icon80.png"; sourceTree = "<group>"; };
+		506400F9195EF7E700DF11EA /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon114.png; path = "../UI设计/UI设计/Icon/Icon114.png"; sourceTree = "<group>"; };
+		506400FA195EF7E700DF11EA /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon120.png; path = "../UI设计/UI设计/Icon/Icon120.png"; sourceTree = "<group>"; };
+		506400FB195EF7E700DF11EA /* Icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon1024.png; path = "../UI设计/UI设计/Icon/Icon1024.png"; sourceTree = "<group>"; };
+		50640109195F033700DF11EA /* input_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = input_login.png; path = "../UI设计/UI设计/密码验证界面/input_login.png"; sourceTree = "<group>"; };
+		5064010A195F033700DF11EA /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_bg.png; path = "../UI设计/UI设计/密码验证界面/login_bg.png"; sourceTree = "<group>"; };
+		5064010B195F033700DF11EA /* login_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_btn.png; path = "../UI设计/UI设计/密码验证界面/login_btn.png"; sourceTree = "<group>"; };
+		5064010C195F033700DF11EA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../UI设计/UI设计/密码验证界面/logo.png"; sourceTree = "<group>"; };
+		50640117195F14C700DF11EA /* MyKeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKeyChainHelper.h; sourceTree = "<group>"; };
+		50640118195F14C700DF11EA /* MyKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKeyChainHelper.m; sourceTree = "<group>"; };
+		5064011B195FAE9900DF11EA /* FindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewController.h; sourceTree = "<group>"; };
+		5064011C195FAE9900DF11EA /* FindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewController.m; sourceTree = "<group>"; };
+		5064011D195FAE9900DF11EA /* FindPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindPasswordViewController.xib; sourceTree = "<group>"; };
+		50640120195FAF7B00DF11EA /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_back.png; path = "../UI设计/UI设计/找回密码界面/btn_back.png"; sourceTree = "<group>"; };
+		50640121195FAF7B00DF11EA /* input_line_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = input_line_bg.png; path = "../UI设计/UI设计/找回密码界面/input_line_bg.png"; sourceTree = "<group>"; };
+		50640122195FAF7B00DF11EA /* title_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title_bg.png; path = "../UI设计/UI设计/找回密码界面/title_bg.png"; sourceTree = "<group>"; };
+		506401261960605300DF11EA /* MyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTool.h; sourceTree = "<group>"; };
+		506401271960605300DF11EA /* MyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTool.m; sourceTree = "<group>"; };
+		50A0411E199266E500C67241 /* CheckRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckRecordViewController.h; sourceTree = "<group>"; };
+		50A0411F199266E500C67241 /* CheckRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckRecordViewController.m; sourceTree = "<group>"; };
+		50A04120199266E500C67241 /* CheckRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckRecordViewController.xib; sourceTree = "<group>"; };
+		50A0413C1996535500C67241 /* CheckRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckRecordCell.xib; sourceTree = "<group>"; };
+		50A0413E19970B2D00C67241 /* CheckRecordHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckRecordHeader.xib; sourceTree = "<group>"; };
+		50A041451998EA6D00C67241 /* RecordMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordMonitorViewController.h; sourceTree = "<group>"; };
+		50A041461998EA6D00C67241 /* RecordMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordMonitorViewController.m; sourceTree = "<group>"; };
+		50A041471998EA6D00C67241 /* RecordMonitorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordMonitorViewController.xib; sourceTree = "<group>"; };
+		50A0414A1998FC7800C67241 /* SetMonitorRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetMonitorRateViewController.h; sourceTree = "<group>"; };
+		50A0414B1998FC7800C67241 /* SetMonitorRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetMonitorRateViewController.m; sourceTree = "<group>"; };
+		50A0414C1998FC7800C67241 /* SetMonitorRateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetMonitorRateViewController.xib; sourceTree = "<group>"; };
+		50A041501999070500C67241 /* SecuritySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecuritySettingViewController.h; sourceTree = "<group>"; };
+		50A041511999070500C67241 /* SecuritySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecuritySettingViewController.m; sourceTree = "<group>"; };
+		50A041521999070500C67241 /* SecuritySettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecuritySettingViewController.xib; sourceTree = "<group>"; };
+		50A04155199908CA00C67241 /* switch_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch_off.png; path = "../UI设计/UI设计/switch_off.png"; sourceTree = "<group>"; };
+		50A04156199908CA00C67241 /* switch_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch_on.png; path = "../UI设计/UI设计/switch_on.png"; sourceTree = "<group>"; };
+		50A5F58219B5999D00CF7A55 /* Icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon29.png; path = "../UI设计/UI设计/Icon/Icon29.png"; sourceTree = "<group>"; };
+		50A5F58619B5A07900CF7A55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../UI设计/UI设计/启动界面/Default-568h@2x.png"; sourceTree = "<group>"; };
+		50A5F58719B5A07900CF7A55 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../UI设计/UI设计/启动界面/Default.png"; sourceTree = "<group>"; };
+		50A5F58819B5A07900CF7A55 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../UI设计/UI设计/启动界面/Default@2x.png"; sourceTree = "<group>"; };
+		50B742E0197D5ABE003EB561 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		50B742E2197D5ACC003EB561 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		50B742E4197D5AD7003EB561 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		50B742E6197D5AE1003EB561 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		50B742E8197D5AF1003EB561 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		50B742EA197D5B10003EB561 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		50B742EC197D5B25003EB561 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = usr/lib/libbz2.1.0.dylib; sourceTree = SDKROOT; };
+		50B742EE197D5B9F003EB561 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		50B742FE197D5BF8003EB561 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		50B743061984A307003EB561 /* playback_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_pause.png; sourceTree = "<group>"; };
+		50B743071984A307003EB561 /* playback_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playback_pause@2x.png"; sourceTree = "<group>"; };
+		50B743081984A307003EB561 /* playback_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_play.png; sourceTree = "<group>"; };
+		50B743091984A307003EB561 /* playback_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playback_play@2x.png"; sourceTree = "<group>"; };
+		50B74316198A7966003EB561 /* ChangeDoorNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDoorNameViewController.h; sourceTree = "<group>"; };
+		50B74317198A7966003EB561 /* ChangeDoorNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDoorNameViewController.m; sourceTree = "<group>"; };
+		50B74318198A7966003EB561 /* ChangeDoorNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeDoorNameViewController.xib; sourceTree = "<group>"; };
+		50C277071A12E7B700D4E525 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		50C277131A12EFD100D4E525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		50C277141A12EFD100D4E525 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		50D9A0B2198BDD9D00030C16 /* UpdatePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePasswordViewController.h; sourceTree = "<group>"; };
+		50D9A0B3198BDD9D00030C16 /* UpdatePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePasswordViewController.m; sourceTree = "<group>"; };
+		50D9A0B4198BDD9D00030C16 /* UpdatePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdatePasswordViewController.xib; sourceTree = "<group>"; };
+		50D9A0B7198BEF9700030C16 /* SetQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetQuestionViewController.h; sourceTree = "<group>"; };
+		50D9A0B8198BEF9700030C16 /* SetQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetQuestionViewController.m; sourceTree = "<group>"; };
+		50D9A0B9198BEF9700030C16 /* SetQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetQuestionViewController.xib; sourceTree = "<group>"; };
+		50F16E29198DD5270075C01A /* DoorStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoorStatusViewController.h; sourceTree = "<group>"; };
+		50F16E2A198DD5270075C01A /* DoorStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoorStatusViewController.m; sourceTree = "<group>"; };
+		50F16E2B198DD5270075C01A /* DoorStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoorStatusViewController.xib; sourceTree = "<group>"; };
+		50F16E2F198E17390075C01A /* SettingClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingClockViewController.h; sourceTree = "<group>"; };
+		50F16E30198E17390075C01A /* SettingClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingClockViewController.m; sourceTree = "<group>"; };
+		50F16E31198E17390075C01A /* SettingClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingClockViewController.xib; sourceTree = "<group>"; };
+		50F16E35198E7AA90075C01A /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
+		50F16E36198E7AA90075C01A /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
+		50F16E37198E7AA90075C01A /* DeviceInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceInfoViewController.xib; sourceTree = "<group>"; };
+		50F9583E198BD07D002F2DF3 /* SystemSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSettingViewController.h; sourceTree = "<group>"; };
+		50F9583F198BD07D002F2DF3 /* SystemSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSettingViewController.m; sourceTree = "<group>"; };
+		50F95840198BD07D002F2DF3 /* SystemSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemSettingViewController.xib; sourceTree = "<group>"; };
+		50F95843198BD225002F2DF3 /* icon_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_more.png; path = "../UI设计/UI设计/icon_more.png"; sourceTree = "<group>"; };
+		F018434C1A6CFBC300C33B4D /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F018434E1A6DFC2700C33B4D /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		F018434F1A6DFC2700C33B4D /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		F01A13BF1B103A0500FA0538 /* MyOpenDoorPwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOpenDoorPwd.h; sourceTree = "<group>"; };
+		F01A13C01B103A0500FA0538 /* MyOpenDoorPwd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOpenDoorPwd.m; sourceTree = "<group>"; };
+		F01A13D61B103EA900FA0538 /* AddOdpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOdpViewController.h; sourceTree = "<group>"; };
+		F01A13D71B103EA900FA0538 /* AddOdpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOdpViewController.m; sourceTree = "<group>"; };
+		F01A13D81B103EA900FA0538 /* AddOdpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddOdpViewController.xib; sourceTree = "<group>"; };
+		F01A13D91B103EA900FA0538 /* OdpListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdpListTableViewCell.h; sourceTree = "<group>"; };
+		F01A13DA1B103EA900FA0538 /* OdpListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdpListTableViewCell.m; sourceTree = "<group>"; };
+		F01A13DB1B103EA900FA0538 /* OdpListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OdpListTableViewCell.xib; sourceTree = "<group>"; };
+		F01A13DC1B103EA900FA0538 /* OdpListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OdpListViewController.h; sourceTree = "<group>"; };
+		F01A13DD1B103EA900FA0538 /* OdpListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OdpListViewController.m; sourceTree = "<group>"; };
+		F01A13DE1B103EA900FA0538 /* OdpListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OdpListViewController.xib; sourceTree = "<group>"; };
+		F01A13E51B16022200FA0538 /* EditOdpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditOdpViewController.h; sourceTree = "<group>"; };
+		F01A13E61B16022200FA0538 /* EditOdpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditOdpViewController.m; sourceTree = "<group>"; };
+		F01A13E71B16022200FA0538 /* EditOdpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditOdpViewController.xib; sourceTree = "<group>"; };
+		F04F1FEC1A75220500C124C0 /* libkxmovie.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkxmovie.a; path = ../libkxmovie.a; sourceTree = "<group>"; };
+		F04F1FEE1A75221D00C124C0 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libavcodec.a"; sourceTree = "<group>"; };
+		F04F1FEF1A75221D00C124C0 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libavdevice.a"; sourceTree = "<group>"; };
+		F04F1FF01A75221D00C124C0 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
+		F04F1FF11A75221D00C124C0 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libavformat.a"; sourceTree = "<group>"; };
+		F04F1FF21A75221D00C124C0 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libavutil.a"; sourceTree = "<group>"; };
+		F04F1FF31A75221D00C124C0 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libswresample.a"; sourceTree = "<group>"; };
+		F04F1FF41A75221D00C124C0 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "../../../Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
+		F04F1FFC1A75223400C124C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F04F1FFE1A75224100C124C0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F054D65B1B175BAE00CF4A7B /* open_pwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_pwd.png; sourceTree = "<group>"; };
+		F054D65F1B1AAD3C00CF4A7B /* selectcontroller_off_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selectcontroller_off_bg.png; path = "../UI设计/UI设计/主功能界面/selectcontroller_off_bg.png"; sourceTree = "<group>"; };
+		F054D6611B1ACCE200CF4A7B /* login_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_bg1.png; path = "../UI设计/UI设计/login_bg1.png"; sourceTree = "<group>"; };
+		F054D6621B1ACCE200CF4A7B /* login_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_bg2.png; path = "../UI设计/UI设计/login_bg2.png"; sourceTree = "<group>"; };
+		F054D6651B1B071A00CF4A7B /* addcard_date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addcard_date.png; sourceTree = "<group>"; };
+		F054D6671B1B291F00CF4A7B /* cancel_alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel_alarm.png; sourceTree = "<group>"; };
+		F056B96D1B22FF7C00BA0019 /* set_status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set_status.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		506400AE195AFC6000DF11EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04F1FFF1A75224100C124C0 /* CoreVideo.framework in Frameworks */,
+				F04F1FFD1A75223400C124C0 /* AVFoundation.framework in Frameworks */,
+				F04F1FF51A75221D00C124C0 /* libavcodec.a in Frameworks */,
+				F04F1FF61A75221D00C124C0 /* libavdevice.a in Frameworks */,
+				F04F1FF71A75221D00C124C0 /* libavfilter.a in Frameworks */,
+				F04F1FF81A75221D00C124C0 /* libavformat.a in Frameworks */,
+				F04F1FF91A75221D00C124C0 /* libavutil.a in Frameworks */,
+				F04F1FFA1A75221D00C124C0 /* libswresample.a in Frameworks */,
+				F04F1FFB1A75221D00C124C0 /* libswscale.a in Frameworks */,
+				F04F1FED1A75220500C124C0 /* libkxmovie.a in Frameworks */,
+				50C277151A12EFD100D4E525 /* CoreData.framework in Frameworks */,
+				50C277161A12EFD100D4E525 /* CoreMedia.framework in Frameworks */,
+				50C277081A12E7B700D4E525 /* OpenAL.framework in Frameworks */,
+				50B742EF197D5BA0003EB561 /* libiconv.dylib in Frameworks */,
+				50B742ED197D5B25003EB561 /* libbz2.1.0.dylib in Frameworks */,
+				50B742EB197D5B10003EB561 /* libz.dylib in Frameworks */,
+				50B742E9197D5AF1003EB561 /* MediaPlayer.framework in Frameworks */,
+				5019558B19C3D63A00BC7D96 /* AudioToolbox.framework in Frameworks */,
+				50B742E7197D5AE1003EB561 /* Accelerate.framework in Frameworks */,
+				50B742E5197D5AD7003EB561 /* QuartzCore.framework in Frameworks */,
+				50B742E3197D5ACC003EB561 /* OpenGLES.framework in Frameworks */,
+				50B742E1197D5ABE003EB561 /* CoreAudio.framework in Frameworks */,
+				5004FB4B19696E4900456BF0 /* Security.framework in Frameworks */,
+				5004FB4919696E3B00456BF0 /* CFNetwork.framework in Frameworks */,
+				5004FB0B19645A3700456BF0 /* libsqlite3.0.dylib in Frameworks */,
+				506400B7195AFC6100DF11EA /* CoreGraphics.framework in Frameworks */,
+				506400B9195AFC6100DF11EA /* UIKit.framework in Frameworks */,
+				506400B5195AFC6100DF11EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506400CF195AFC6200DF11EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506400D4195AFC6200DF11EA /* XCTest.framework in Frameworks */,
+				506400D6195AFC6200DF11EA /* UIKit.framework in Frameworks */,
+				506400D5195AFC6200DF11EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5004FAE51962EE4D00456BF0 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				5004FB0C1965A20800456BF0 /* EditDeviceViewController.h */,
+				5004FB0D1965A20800456BF0 /* EditDeviceViewController.m */,
+				5004FB0E1965A20800456BF0 /* EditDeviceViewController.xib */,
+				5004FAE61962EE8E00456BF0 /* DeviceListViewController.h */,
+				5004FAE71962EE8E00456BF0 /* DeviceListViewController.m */,
+				5004FAE81962EE8E00456BF0 /* DeviceListViewController.xib */,
+				5004FAED1962F97200456BF0 /* DeviceTableViewCell.h */,
+				5004FAEE1962F97200456BF0 /* DeviceTableViewCell.m */,
+				5004FAF01962F99A00456BF0 /* DeviceTableViewCell.xib */,
+				5004FAF2196445DF00456BF0 /* AddDeviceViewController.h */,
+				5004FAF3196445DF00456BF0 /* AddDeviceViewController.m */,
+				5004FAF4196445DF00456BF0 /* AddDeviceViewController.xib */,
+				5004FB071964527900456BF0 /* MyDevice.h */,
+				5004FB081964527900456BF0 /* MyDevice.m */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		5004FAF719644C2C00456BF0 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				5004FAF819644C7900456BF0 /* FMDatabase.h */,
+				5004FAF919644C7900456BF0 /* FMDatabase.m */,
+				5004FAFA19644C7900456BF0 /* FMDatabaseAdditions.h */,
+				5004FAFB19644C7900456BF0 /* FMDatabaseAdditions.m */,
+				5004FAFC19644C7900456BF0 /* FMDatabasePool.h */,
+				5004FAFD19644C7900456BF0 /* FMDatabasePool.m */,
+				5004FAFE19644C7900456BF0 /* FMDatabaseQueue.h */,
+				5004FAFF19644C7900456BF0 /* FMDatabaseQueue.m */,
+				5004FB0019644C7900456BF0 /* FMResultSet.h */,
+				5004FB0119644C7900456BF0 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		5004FB191967916600456BF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5004FB1A1968F80100456BF0 /* MainMenuViewController.h */,
+				5004FB1B1968F80100456BF0 /* MainMenuViewController.m */,
+				5004FB1C1968F80100456BF0 /* MainMenuViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5004FB4C196B77FB00456BF0 /* OpenDoor */ = {
+			isa = PBXGroup;
+			children = (
+				5004FB4D196B782D00456BF0 /* OpenDoorViewController.h */,
+				5004FB4E196B782D00456BF0 /* OpenDoorViewController.m */,
+				5004FB4F196B782D00456BF0 /* OpenDoorViewController.xib */,
+			);
+			name = OpenDoor;
+			sourceTree = "<group>";
+		};
+		50143B96197165800024FD95 /* CardManage */ = {
+			isa = PBXGroup;
+			children = (
+				50143BAF1972AC170024FD95 /* EditCardViewController.h */,
+				50143BB01972AC170024FD95 /* EditCardViewController.m */,
+				50143BB11972AC170024FD95 /* EditCardViewController.xib */,
+				50143B97197165AC0024FD95 /* AddCardViewController.h */,
+				50143B98197165AC0024FD95 /* AddCardViewController.m */,
+				50143B99197165AC0024FD95 /* AddCardViewController.xib */,
+				50143BA019716DFA0024FD95 /* MyCard.h */,
+				50143BA119716DFA0024FD95 /* MyCard.m */,
+				50143BA3197172970024FD95 /* CardListViewController.h */,
+				50143BA4197172970024FD95 /* CardListViewController.m */,
+				50143BA5197172970024FD95 /* CardListViewController.xib */,
+				50143BAA197174D60024FD95 /* CardListTableViewCell.h */,
+				50143BAB197174D60024FD95 /* CardListTableViewCell.m */,
+				50143BAC197174D60024FD95 /* CardListTableViewCell.xib */,
+			);
+			name = CardManage;
+			sourceTree = "<group>";
+		};
+		506400A8195AFC5F00DF11EA = {
+			isa = PBXGroup;
+			children = (
+				506400F0195EF7A200DF11EA /* resources */,
+				506400BA195AFC6100DF11EA /* FCARD */,
+				506400B3195AFC6000DF11EA /* Frameworks */,
+				506400B2195AFC6000DF11EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		506400B2195AFC6000DF11EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506400B1195AFC6000DF11EA /* FCARD.app */,
+				506400D2195AFC6200DF11EA /* FCARDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		506400B3195AFC6000DF11EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50B742E6197D5AE1003EB561 /* Accelerate.framework */,
+				5019558A19C3D63A00BC7D96 /* AudioToolbox.framework */,
+				F04F1FFC1A75223400C124C0 /* AVFoundation.framework */,
+				5004FB4819696E3B00456BF0 /* CFNetwork.framework */,
+				50B742E0197D5ABE003EB561 /* CoreAudio.framework */,
+				50C277131A12EFD100D4E525 /* CoreData.framework */,
+				506400B6195AFC6100DF11EA /* CoreGraphics.framework */,
+				50C277141A12EFD100D4E525 /* CoreMedia.framework */,
+				F04F1FFE1A75224100C124C0 /* CoreVideo.framework */,
+				506400B4195AFC6000DF11EA /* Foundation.framework */,
+				F04F1FEE1A75221D00C124C0 /* libavcodec.a */,
+				F04F1FEF1A75221D00C124C0 /* libavdevice.a */,
+				F04F1FF01A75221D00C124C0 /* libavfilter.a */,
+				F04F1FF11A75221D00C124C0 /* libavformat.a */,
+				F04F1FF21A75221D00C124C0 /* libavutil.a */,
+				50B742EC197D5B25003EB561 /* libbz2.1.0.dylib */,
+				50B742EE197D5B9F003EB561 /* libiconv.dylib */,
+				F04F1FEC1A75220500C124C0 /* libkxmovie.a */,
+				5004FB0A19645A3700456BF0 /* libsqlite3.0.dylib */,
+				F04F1FF31A75221D00C124C0 /* libswresample.a */,
+				F04F1FF41A75221D00C124C0 /* libswscale.a */,
+				50B742EA197D5B10003EB561 /* libz.dylib */,
+				50B742E8197D5AF1003EB561 /* MediaPlayer.framework */,
+				50C277071A12E7B700D4E525 /* OpenAL.framework */,
+				50B742E2197D5ACC003EB561 /* OpenGLES.framework */,
+				50B742E4197D5AD7003EB561 /* QuartzCore.framework */,
+				5004FB4A19696E4900456BF0 /* Security.framework */,
+				506400B8195AFC6100DF11EA /* UIKit.framework */,
+				506400D3195AFC6200DF11EA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		506400BA195AFC6100DF11EA /* FCARD */ = {
+			isa = PBXGroup;
+			children = (
+				F01A13BD1B10393200FA0538 /* OpenDoorPwd */,
+				50A0414F1999064600C67241 /* SecuritySetting */,
+				50A0411D1992669200C67241 /* CheckRecord */,
+				50F16E34198E7A620075C01A /* DeviceInfo */,
+				50F16E2E198E171D0075C01A /* SettingClock */,
+				50F16E28198DD5050075C01A /* DoorStatus */,
+				50F9583D198BD05B002F2DF3 /* SystemSetting */,
+				50B74312198A78FA003EB561 /* ChangeName */,
+				50143B96197165800024FD95 /* CardManage */,
+				5004FB4C196B77FB00456BF0 /* OpenDoor */,
+				5004FB191967916600456BF0 /* Main */,
+				5004FAF719644C2C00456BF0 /* FMDB */,
+				5004FAE51962EE4D00456BF0 /* Device */,
+				5064011A195FAE5E00DF11EA /* FindPassword */,
+				506400EC195B03EE00DF11EA /* util */,
+				506400E9195B000500DF11EA /* FCARD.entitlements */,
+				506400C3195AFC6100DF11EA /* freelancerAppDelegate.h */,
+				506400C4195AFC6100DF11EA /* freelancerAppDelegate.m */,
+				506400C6195AFC6100DF11EA /* Main.storyboard */,
+				506400C9195AFC6100DF11EA /* freelancerViewController.h */,
+				506400CA195AFC6100DF11EA /* freelancerViewController.m */,
+				506400CC195AFC6100DF11EA /* Images.xcassets */,
+				506400BB195AFC6100DF11EA /* Supporting Files */,
+			);
+			path = FCARD;
+			sourceTree = "<group>";
+		};
+		506400BB195AFC6100DF11EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506400BC195AFC6100DF11EA /* FCARD-Info.plist */,
+				506400C0195AFC6100DF11EA /* main.m */,
+				506400C2195AFC6100DF11EA /* FCARD-Prefix.pch */,
+				F018434C1A6CFBC300C33B4D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		506400EC195B03EE00DF11EA /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F018434E1A6DFC2700C33B4D /* iToast.h */,
+				F018434F1A6DFC2700C33B4D /* iToast.m */,
+				50B742FE197D5BF8003EB561 /* LiveViewController.h */,
+				5004FB4219696E1000456BF0 /* GCDAsyncSocket.h */,
+				5004FB4319696E1000456BF0 /* GCDAsyncSocket.m */,
+				5004FB4419696E1000456BF0 /* GCDAsyncUdpSocket.h */,
+				5004FB4519696E1000456BF0 /* GCDAsyncUdpSocket.m */,
+				506400ED195B045400DF11EA /* PacketStruct.h */,
+				50640117195F14C700DF11EA /* MyKeyChainHelper.h */,
+				50640118195F14C700DF11EA /* MyKeyChainHelper.m */,
+				506401261960605300DF11EA /* MyTool.h */,
+				506401271960605300DF11EA /* MyTool.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		506400F0195EF7A200DF11EA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F056B96D1B22FF7C00BA0019 /* set_status.png */,
+				F054D6671B1B291F00CF4A7B /* cancel_alarm.png */,
+				F054D6651B1B071A00CF4A7B /* addcard_date.png */,
+				F054D6611B1ACCE200CF4A7B /* login_bg1.png */,
+				F054D6621B1ACCE200CF4A7B /* login_bg2.png */,
+				F054D65F1B1AAD3C00CF4A7B /* selectcontroller_off_bg.png */,
+				F054D65B1B175BAE00CF4A7B /* open_pwd.png */,
+				50A5F58619B5A07900CF7A55 /* Default-568h@2x.png */,
+				50A5F58719B5A07900CF7A55 /* Default.png */,
+				50A5F58819B5A07900CF7A55 /* Default@2x.png */,
+				50A5F58219B5999D00CF7A55 /* Icon29.png */,
+				50A04155199908CA00C67241 /* switch_off.png */,
+				50A04156199908CA00C67241 /* switch_on.png */,
+				50F95843198BD225002F2DF3 /* icon_more.png */,
+				50B743061984A307003EB561 /* playback_pause.png */,
+				50B743071984A307003EB561 /* playback_pause@2x.png */,
+				50B743081984A307003EB561 /* playback_play.png */,
+				50B743091984A307003EB561 /* playback_play@2x.png */,
+				50143BA8197173960024FD95 /* searchbox.png */,
+				50143B9C197168520024FD95 /* addcard_imageview_off.png */,
+				50143B9D197168520024FD95 /* addcard_imageview_on.png */,
+				5004FB52196B792200456BF0 /* remotedoor_off_bg.png */,
+				5004FB53196B792200456BF0 /* remotedoor_on_bg.png */,
+				5004FB241968FDF000456BF0 /* addnewcard_off.png */,
+				5004FB251968FDF000456BF0 /* checkrecords_off.png */,
+				5004FB261968FDF000456BF0 /* communications_off.png */,
+				5004FB271968FDF000456BF0 /* datamonitoring_off.png */,
+				5004FB281968FDF000456BF0 /* deletenewcard_off.png */,
+				5004FB291968FDF000456BF0 /* deviceinformation_off.png */,
+				5004FB2A1968FDF000456BF0 /* doorstate_off.png */,
+				5004FB2C1968FDF000456BF0 /* nomenclature_off.png */,
+				5004FB2D1968FDF000456BF0 /* personnelfiles_off_bg.png */,
+				5004FB2E1968FDF000456BF0 /* remotedoor_off.png */,
+				5004FB2F1968FDF000456BF0 /* securitysettings_off.png */,
+				5004FB301968FDF000456BF0 /* settingclock_off.png */,
+				5004FB311968FDF000456BF0 /* systemsettings_off_bg.png */,
+				5004FB321968FDF000456BF0 /* videosurveillance_off.png */,
+				5004FAEB1962F31800456BF0 /* list_bg.png */,
+				50640120195FAF7B00DF11EA /* btn_back.png */,
+				50640121195FAF7B00DF11EA /* input_line_bg.png */,
+				50640122195FAF7B00DF11EA /* title_bg.png */,
+				50640109195F033700DF11EA /* input_login.png */,
+				5064010A195F033700DF11EA /* login_bg.png */,
+				5064010B195F033700DF11EA /* login_btn.png */,
+				5064010C195F033700DF11EA /* logo.png */,
+				506400F5195EF7E700DF11EA /* Icon57.png */,
+				506400F6195EF7E700DF11EA /* Icon58.png */,
+				506400F7195EF7E700DF11EA /* Icon72.png */,
+				506400F8195EF7E700DF11EA /* Icon80.png */,
+				506400F9195EF7E700DF11EA /* Icon114.png */,
+				506400FA195EF7E700DF11EA /* Icon120.png */,
+				506400FB195EF7E700DF11EA /* Icon1024.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		5064011A195FAE5E00DF11EA /* FindPassword */ = {
+			isa = PBXGroup;
+			children = (
+				5064011B195FAE9900DF11EA /* FindPasswordViewController.h */,
+				5064011C195FAE9900DF11EA /* FindPasswordViewController.m */,
+				5064011D195FAE9900DF11EA /* FindPasswordViewController.xib */,
+			);
+			name = FindPassword;
+			sourceTree = "<group>";
+		};
+		50A0411D1992669200C67241 /* CheckRecord */ = {
+			isa = PBXGroup;
+			children = (
+				50A041451998EA6D00C67241 /* RecordMonitorViewController.h */,
+				50A041461998EA6D00C67241 /* RecordMonitorViewController.m */,
+				50A041471998EA6D00C67241 /* RecordMonitorViewController.xib */,
+				50A0411E199266E500C67241 /* CheckRecordViewController.h */,
+				50A0411F199266E500C67241 /* CheckRecordViewController.m */,
+				50A04120199266E500C67241 /* CheckRecordViewController.xib */,
+				50A0413C1996535500C67241 /* CheckRecordCell.xib */,
+				50A0413E19970B2D00C67241 /* CheckRecordHeader.xib */,
+			);
+			name = CheckRecord;
+			sourceTree = "<group>";
+		};
+		50A0414F1999064600C67241 /* SecuritySetting */ = {
+			isa = PBXGroup;
+			children = (
+				50A041501999070500C67241 /* SecuritySettingViewController.h */,
+				50A041511999070500C67241 /* SecuritySettingViewController.m */,
+				50A041521999070500C67241 /* SecuritySettingViewController.xib */,
+			);
+			name = SecuritySetting;
+			sourceTree = "<group>";
+		};
+		50B74312198A78FA003EB561 /* ChangeName */ = {
+			isa = PBXGroup;
+			children = (
+				50B74316198A7966003EB561 /* ChangeDoorNameViewController.h */,
+				50B74317198A7966003EB561 /* ChangeDoorNameViewController.m */,
+				50B74318198A7966003EB561 /* ChangeDoorNameViewController.xib */,
+			);
+			name = ChangeName;
+			sourceTree = "<group>";
+		};
+		50F16E28198DD5050075C01A /* DoorStatus */ = {
+			isa = PBXGroup;
+			children = (
+				50F16E29198DD5270075C01A /* DoorStatusViewController.h */,
+				50F16E2A198DD5270075C01A /* DoorStatusViewController.m */,
+				50F16E2B198DD5270075C01A /* DoorStatusViewController.xib */,
+			);
+			name = DoorStatus;
+			sourceTree = "<group>";
+		};
+		50F16E2E198E171D0075C01A /* SettingClock */ = {
+			isa = PBXGroup;
+			children = (
+				50F16E2F198E17390075C01A /* SettingClockViewController.h */,
+				50F16E30198E17390075C01A /* SettingClockViewController.m */,
+				50F16E31198E17390075C01A /* SettingClockViewController.xib */,
+			);
+			name = SettingClock;
+			sourceTree = "<group>";
+		};
+		50F16E34198E7A620075C01A /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				50F16E35198E7AA90075C01A /* DeviceInfoViewController.h */,
+				50F16E36198E7AA90075C01A /* DeviceInfoViewController.m */,
+				50F16E37198E7AA90075C01A /* DeviceInfoViewController.xib */,
+			);
+			name = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		50F9583D198BD05B002F2DF3 /* SystemSetting */ = {
+			isa = PBXGroup;
+			children = (
+				50F9583E198BD07D002F2DF3 /* SystemSettingViewController.h */,
+				50F9583F198BD07D002F2DF3 /* SystemSettingViewController.m */,
+				50F95840198BD07D002F2DF3 /* SystemSettingViewController.xib */,
+				50D9A0B2198BDD9D00030C16 /* UpdatePasswordViewController.h */,
+				50D9A0B3198BDD9D00030C16 /* UpdatePasswordViewController.m */,
+				50D9A0B4198BDD9D00030C16 /* UpdatePasswordViewController.xib */,
+				50D9A0B7198BEF9700030C16 /* SetQuestionViewController.h */,
+				50D9A0B8198BEF9700030C16 /* SetQuestionViewController.m */,
+				50D9A0B9198BEF9700030C16 /* SetQuestionViewController.xib */,
+				50A0414A1998FC7800C67241 /* SetMonitorRateViewController.h */,
+				50A0414B1998FC7800C67241 /* SetMonitorRateViewController.m */,
+				50A0414C1998FC7800C67241 /* SetMonitorRateViewController.xib */,
+			);
+			name = SystemSetting;
+			sourceTree = "<group>";
+		};
+		F01A13BD1B10393200FA0538 /* OpenDoorPwd */ = {
+			isa = PBXGroup;
+			children = (
+				F01A13E51B16022200FA0538 /* EditOdpViewController.h */,
+				F01A13E61B16022200FA0538 /* EditOdpViewController.m */,
+				F01A13D81B103EA900FA0538 /* AddOdpViewController.xib */,
+				F01A13E71B16022200FA0538 /* EditOdpViewController.xib */,
+				F01A13D61B103EA900FA0538 /* AddOdpViewController.h */,
+				F01A13D71B103EA900FA0538 /* AddOdpViewController.m */,
+				F01A13D91B103EA900FA0538 /* OdpListTableViewCell.h */,
+				F01A13DA1B103EA900FA0538 /* OdpListTableViewCell.m */,
+				F01A13DB1B103EA900FA0538 /* OdpListTableViewCell.xib */,
+				F01A13DC1B103EA900FA0538 /* OdpListViewController.h */,
+				F01A13DD1B103EA900FA0538 /* OdpListViewController.m */,
+				F01A13DE1B103EA900FA0538 /* OdpListViewController.xib */,
+				F01A13BF1B103A0500FA0538 /* MyOpenDoorPwd.h */,
+				F01A13C01B103A0500FA0538 /* MyOpenDoorPwd.m */,
+			);
+			name = OpenDoorPwd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		506400B0195AFC6000DF11EA /* FCARD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506400E3195AFC6200DF11EA /* Build configuration list for PBXNativeTarget "FCARD" */;
+			buildPhases = (
+				506400AD195AFC6000DF11EA /* Sources */,
+				506400AE195AFC6000DF11EA /* Frameworks */,
+				506400AF195AFC6000DF11EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCARD;
+			productName = FCARD;
+			productReference = 506400B1195AFC6000DF11EA /* FCARD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		506400D1195AFC6200DF11EA /* FCARDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506400E6195AFC6300DF11EA /* Build configuration list for PBXNativeTarget "FCARDTests" */;
+			buildPhases = (
+				506400CE195AFC6200DF11EA /* Sources */,
+				506400CF195AFC6200DF11EA /* Frameworks */,
+				506400D0195AFC6200DF11EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506400D8195AFC6200DF11EA /* PBXTargetDependency */,
+			);
+			name = FCARDTests;
+			productName = FCARDTests;
+			productReference = 506400D2195AFC6200DF11EA /* FCARDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		506400A9195AFC5F00DF11EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = freelancer;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = FREELANCER;
+				TargetAttributes = {
+					506400B0195AFC6000DF11EA = {
+						DevelopmentTeam = 954K7E56Q8;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+					506400D1195AFC6200DF11EA = {
+						DevelopmentTeam = 954K7E56Q8;
+						TestTargetID = 506400B0195AFC6000DF11EA;
+					};
+				};
+			};
+			buildConfigurationList = 506400AC195AFC5F00DF11EA /* Build configuration list for PBXProject "FCARD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 506400A8195AFC5F00DF11EA;
+			productRefGroup = 506400B2195AFC6000DF11EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506400B0195AFC6000DF11EA /* FCARD */,
+				506400D1195AFC6200DF11EA /* FCARDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		506400AF195AFC6000DF11EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F054D6631B1ACCE200CF4A7B /* login_bg1.png in Resources */,
+				50F16E2D198DD5270075C01A /* DoorStatusViewController.xib in Resources */,
+				5004FAEC1962F31800456BF0 /* list_bg.png in Resources */,
+				506400FE195EF7E700DF11EA /* Icon72.png in Resources */,
+				506400CD195AFC6100DF11EA /* Images.xcassets in Resources */,
+				5004FB391968FDF000456BF0 /* doorstate_off.png in Resources */,
+				50640125195FAF7B00DF11EA /* title_bg.png in Resources */,
+				5064010D195F033700DF11EA /* input_login.png in Resources */,
+				5004FB51196B782D00456BF0 /* OpenDoorViewController.xib in Resources */,
+				5004FB55196B792200456BF0 /* remotedoor_on_bg.png in Resources */,
+				50640101195EF7E700DF11EA /* Icon120.png in Resources */,
+				50A04122199266E500C67241 /* CheckRecordViewController.xib in Resources */,
+				5064011F195FAE9900DF11EA /* FindPasswordViewController.xib in Resources */,
+				50A041491998EA6D00C67241 /* RecordMonitorViewController.xib in Resources */,
+				50B7430C1984A307003EB561 /* playback_play.png in Resources */,
+				F054D6601B1AAD3C00CF4A7B /* selectcontroller_off_bg.png in Resources */,
+				50143B9E197168520024FD95 /* addcard_imageview_off.png in Resources */,
+				50640123195FAF7B00DF11EA /* btn_back.png in Resources */,
+				5004FB351968FDF000456BF0 /* communications_off.png in Resources */,
+				50B7431A198A7966003EB561 /* ChangeDoorNameViewController.xib in Resources */,
+				50640100195EF7E700DF11EA /* Icon114.png in Resources */,
+				50A0413D1996535500C67241 /* CheckRecordCell.xib in Resources */,
+				50640110195F033700DF11EA /* logo.png in Resources */,
+				506400FD195EF7E700DF11EA /* Icon58.png in Resources */,
+				5004FB3B1968FDF000456BF0 /* nomenclature_off.png in Resources */,
+				50A04158199908CA00C67241 /* switch_on.png in Resources */,
+				F01A13E21B103EA900FA0538 /* OdpListTableViewCell.xib in Resources */,
+				5004FAEA1962EE8E00456BF0 /* DeviceListViewController.xib in Resources */,
+				F018434D1A6CFBC300C33B4D /* InfoPlist.strings in Resources */,
+				506400FC195EF7E700DF11EA /* Icon57.png in Resources */,
+				50B7430A1984A307003EB561 /* playback_pause.png in Resources */,
+				5004FB3F1968FDF000456BF0 /* settingclock_off.png in Resources */,
+				50640102195EF7E700DF11EA /* Icon1024.png in Resources */,
+				50143BA9197173960024FD95 /* searchbox.png in Resources */,
+				50A5F58319B5999D00CF7A55 /* Icon29.png in Resources */,
+				50143BB31972AC170024FD95 /* EditCardViewController.xib in Resources */,
+				F054D6661B1B071A00CF4A7B /* addcard_date.png in Resources */,
+				50A5F58919B5A07900CF7A55 /* Default-568h@2x.png in Resources */,
+				5004FB3E1968FDF000456BF0 /* securitysettings_off.png in Resources */,
+				50D9A0B6198BDD9D00030C16 /* UpdatePasswordViewController.xib in Resources */,
+				5064010E195F033700DF11EA /* login_bg.png in Resources */,
+				F056B96E1B22FF7C00BA0019 /* set_status.png in Resources */,
+				50A0414E1998FC7800C67241 /* SetMonitorRateViewController.xib in Resources */,
+				50143B9F197168520024FD95 /* addcard_imageview_on.png in Resources */,
+				5004FB3C1968FDF000456BF0 /* personnelfiles_off_bg.png in Resources */,
+				5064010F195F033700DF11EA /* login_btn.png in Resources */,
+				50F16E39198E7AA90075C01A /* DeviceInfoViewController.xib in Resources */,
+				50A04157199908CA00C67241 /* switch_off.png in Resources */,
+				5004FB1E1968F80100456BF0 /* MainMenuViewController.xib in Resources */,
+				F01A13E41B103EA900FA0538 /* OdpListViewController.xib in Resources */,
+				50143BAE197174D60024FD95 /* CardListTableViewCell.xib in Resources */,
+				50F16E33198E17390075C01A /* SettingClockViewController.xib in Resources */,
+				5004FB381968FDF000456BF0 /* deviceinformation_off.png in Resources */,
+				5004FB331968FDF000456BF0 /* addnewcard_off.png in Resources */,
+				50A5F58B19B5A07900CF7A55 /* Default@2x.png in Resources */,
+				50F95842198BD07D002F2DF3 /* SystemSettingViewController.xib in Resources */,
+				50143BA7197172970024FD95 /* CardListViewController.xib in Resources */,
+				F054D65C1B175BAE00CF4A7B /* open_pwd.png in Resources */,
+				50A5F58A19B5A07900CF7A55 /* Default.png in Resources */,
+				5004FB101965A20800456BF0 /* EditDeviceViewController.xib in Resources */,
+				50A041541999070500C67241 /* SecuritySettingViewController.xib in Resources */,
+				5004FAF11962F99A00456BF0 /* DeviceTableViewCell.xib in Resources */,
+				50B7430B1984A307003EB561 /* playback_pause@2x.png in Resources */,
+				F01A13E91B16022200FA0538 /* EditOdpViewController.xib in Resources */,
+				F01A13E01B103EA900FA0538 /* AddOdpViewController.xib in Resources */,
+				5004FB341968FDF000456BF0 /* checkrecords_off.png in Resources */,
+				5004FB371968FDF000456BF0 /* deletenewcard_off.png in Resources */,
+				50F95845198BD225002F2DF3 /* icon_more.png in Resources */,
+				5004FB3D1968FDF000456BF0 /* remotedoor_off.png in Resources */,
+				F054D6641B1ACCE200CF4A7B /* login_bg2.png in Resources */,
+				F054D6681B1B291F00CF4A7B /* cancel_alarm.png in Resources */,
+				5004FB411968FDF000456BF0 /* videosurveillance_off.png in Resources */,
+				5004FB361968FDF000456BF0 /* datamonitoring_off.png in Resources */,
+				5004FAF6196445DF00456BF0 /* AddDeviceViewController.xib in Resources */,
+				50B7430D1984A307003EB561 /* playback_play@2x.png in Resources */,
+				506400FF195EF7E700DF11EA /* Icon80.png in Resources */,
+				50A0413F19970B2D00C67241 /* CheckRecordHeader.xib in Resources */,
+				50D9A0BB198BEF9700030C16 /* SetQuestionViewController.xib in Resources */,
+				5004FB54196B792200456BF0 /* remotedoor_off_bg.png in Resources */,
+				506400C8195AFC6100DF11EA /* Main.storyboard in Resources */,
+				5004FB401968FDF000456BF0 /* systemsettings_off_bg.png in Resources */,
+				50143B9B197165AC0024FD95 /* AddCardViewController.xib in Resources */,
+				50640124195FAF7B00DF11EA /* input_line_bg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506400D0195AFC6200DF11EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506400AD195AFC6000DF11EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01A13E81B16022200FA0538 /* EditOdpViewController.m in Sources */,
+				5004FB50196B782D00456BF0 /* OpenDoorViewController.m in Sources */,
+				506401281960605300DF11EA /* MyTool.m in Sources */,
+				F01A13DF1B103EA900FA0538 /* AddOdpViewController.m in Sources */,
+				F01843501A6DFC2700C33B4D /* iToast.m in Sources */,
+				F01A13C11B103A0500FA0538 /* MyOpenDoorPwd.m in Sources */,
+				5004FB0419644C7900456BF0 /* FMDatabasePool.m in Sources */,
+				5004FB0619644C7900456BF0 /* FMResultSet.m in Sources */,
+				50A041481998EA6D00C67241 /* RecordMonitorViewController.m in Sources */,
+				506400C1195AFC6100DF11EA /* main.m in Sources */,
+				50143BA6197172970024FD95 /* CardListViewController.m in Sources */,
+				5004FB091964527900456BF0 /* MyDevice.m in Sources */,
+				5064011E195FAE9900DF11EA /* FindPasswordViewController.m in Sources */,
+				50A04121199266E500C67241 /* CheckRecordViewController.m in Sources */,
+				5004FB4619696E1000456BF0 /* GCDAsyncSocket.m in Sources */,
+				50143B9A197165AC0024FD95 /* AddCardViewController.m in Sources */,
+				50D9A0BA198BEF9700030C16 /* SetQuestionViewController.m in Sources */,
+				F01A13E31B103EA900FA0538 /* OdpListViewController.m in Sources */,
+				F01A13E11B103EA900FA0538 /* OdpListTableViewCell.m in Sources */,
+				5004FB0519644C7900456BF0 /* FMDatabaseQueue.m in Sources */,
+				50143BB21972AC170024FD95 /* EditCardViewController.m in Sources */,
+				5004FB0219644C7900456BF0 /* FMDatabase.m in Sources */,
+				5004FAEF1962F97200456BF0 /* DeviceTableViewCell.m in Sources */,
+				5004FB1D1968F80100456BF0 /* MainMenuViewController.m in Sources */,
+				50F16E38198E7AA90075C01A /* DeviceInfoViewController.m in Sources */,
+				50B74319198A7966003EB561 /* ChangeDoorNameViewController.m in Sources */,
+				50143BA219716DFA0024FD95 /* MyCard.m in Sources */,
+				50A0414D1998FC7800C67241 /* SetMonitorRateViewController.m in Sources */,
+				50F16E32198E17390075C01A /* SettingClockViewController.m in Sources */,
+				50A041531999070500C67241 /* SecuritySettingViewController.m in Sources */,
+				5004FB4719696E1000456BF0 /* GCDAsyncUdpSocket.m in Sources */,
+				50D9A0B5198BDD9D00030C16 /* UpdatePasswordViewController.m in Sources */,
+				50F16E2C198DD5270075C01A /* DoorStatusViewController.m in Sources */,
+				5004FB0F1965A20800456BF0 /* EditDeviceViewController.m in Sources */,
+				506400C5195AFC6100DF11EA /* freelancerAppDelegate.m in Sources */,
+				50F95841198BD07D002F2DF3 /* SystemSettingViewController.m in Sources */,
+				506400CB195AFC6100DF11EA /* freelancerViewController.m in Sources */,
+				50143BAD197174D60024FD95 /* CardListTableViewCell.m in Sources */,
+				5004FB0319644C7900456BF0 /* FMDatabaseAdditions.m in Sources */,
+				5004FAE91962EE8E00456BF0 /* DeviceListViewController.m in Sources */,
+				50640119195F14C700DF11EA /* MyKeyChainHelper.m in Sources */,
+				5004FAF5196445DF00456BF0 /* AddDeviceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506400CE195AFC6200DF11EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506400D8195AFC6200DF11EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506400B0195AFC6000DF11EA /* FCARD */;
+			targetProxy = 506400D7195AFC6200DF11EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		506400C6195AFC6100DF11EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506400C7195AFC6100DF11EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		506400E1195AFC6200DF11EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = freelancer;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: Runze Wu (64M4378224)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = freelancer;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "51307419-a932-42e9-9105-d6e92c466acf";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		506400E2195AFC6200DF11EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = freelancer;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Runze Wu (954K7E56Q8)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = freelancer;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "7fe382b4-e3dc-4fa8-9b83-d6cb5c0f63f9";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		506400E4195AFC6200DF11EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = "";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_ENTITLEMENTS = FCARD/FCARD.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCARD/FCARD-Prefix.pch";
+				INFOPLIST_FILE = "FCARD/FCARD-Info.plist";
+				INSTALL_OWNER = freelancer;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/freelancer/Desktop/FCARD,
+					/Users/freelancer/Work/ffmepg/ffmpeg.iOS.2.3.3/lib,
+					/Users/freelancer/Documents/uzplayer/uzplayer/kxmovie/libs,
+					"/Users/freelancer/Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib",
+				);
+				New_Setting = "	";
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		506400E5195AFC6200DF11EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALTERNATE_OWNER = "";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_ENTITLEMENTS = FCARD/FCARD.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCARD/FCARD-Prefix.pch";
+				INFOPLIST_FILE = "FCARD/FCARD-Info.plist";
+				INSTALL_OWNER = freelancer;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/freelancer/Desktop/FCARD,
+					/Users/freelancer/Work/ffmepg/ffmpeg.iOS.2.3.3/lib,
+					/Users/freelancer/Documents/uzplayer/uzplayer/kxmovie/libs,
+					"/Users/freelancer/Work/ffmepg/ffmpeg-ios-master/FFmpeg-iOS/lib",
+				);
+				New_Setting = "	";
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		506400E7195AFC6300DF11EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FCARD.app/FCARD";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCARD/FCARD-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FCARDTests/FCARDTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		506400E8195AFC6300DF11EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FCARD.app/FCARD";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FCARD/FCARD-Prefix.pch";
+				INFOPLIST_FILE = "FCARDTests/FCARDTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		506400AC195AFC5F00DF11EA /* Build configuration list for PBXProject "FCARD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506400E1195AFC6200DF11EA /* Debug */,
+				506400E2195AFC6200DF11EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506400E3195AFC6200DF11EA /* Build configuration list for PBXNativeTarget "FCARD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506400E4195AFC6200DF11EA /* Debug */,
+				506400E5195AFC6200DF11EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506400E6195AFC6300DF11EA /* Build configuration list for PBXNativeTarget "FCARDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506400E7195AFC6300DF11EA /* Debug */,
+				506400E8195AFC6300DF11EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 506400A9195AFC5F00DF11EA /* Project object */;
+}
